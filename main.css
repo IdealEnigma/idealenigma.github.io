@@ -1,7 +1,7 @@
 /* Base Styles -------------------- */
 :root {
   --black: black;
-  --white: #FFF5EE; /*#d5d8de*/
+  --white: #FEFEFA ; /*#d5d8de*/ /*#FFF5EE*/
   --purple:#6E187B; 
   --orange:  #E57254; /*#6D8BA2*/
   --yellow:#FFDC00;
@@ -104,6 +104,16 @@ a:hover {
       padding: 20px 0; } }
 
 .main-footer a {
+  color: var(--white);
+}
+
+strike {
+  color: var(--black);
+}
+
+.logo {
+  font-size: 100px;
+  margin: 0;
   color: var(--white);
 }
 

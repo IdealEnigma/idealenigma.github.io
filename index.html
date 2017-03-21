@@ -5,12 +5,14 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway|Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width">
-
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
   </head>
   <body>
     <header id="top" class="main-header">
+      <h1 class = "logo"> < ie > </h1>
       <span class="main-title">Full Stack Web and Mobile Solutions</span>
       <h1 class="main-heading">Ideal Enigma</h1>
+
       <a href = "#services">
       <img class="arrow" src="images/arrow.svg" alt="Down arrow"></a>
     </header>
@@ -51,6 +53,34 @@
 			<h2><a href=""> © Ideal Engima| 2017</a></h2>
 			<a href="#top" class = "backToTop">Back to top &raquo;</a>
 		</footer>
+     <!--Start of Tawk.to Script-->
+    <script>
+    //   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    //   (function(){
+    //   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    //   s1.async=true;
+    //   s1.src='https://embed.tawk.to/5733d42fc6045a5c6e8da8b2/default';
+    //   s1.charset='UTF-8';
+    //   s1.setAttribute('crossorigin','*');
+    //   s0.parentNode.insertBefore(s1,s0);
+    // })();
+
+    const pressed = [];
+    const secretCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b" , "a", "Enter"];
+// const secretCode = 'cozy';
+
+window.addEventListener('keyup', (e) => {
+  // console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+  if(pressed.join('').includes(secretCode)) {
+    console.log("DING, DING!!");
+    cornify_add();
+  }
+  // console.log(pressed);
+});
+    </script>
+    <!--End of Tawk.to Script-->
 
   </body>
 </html>
