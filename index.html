@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Ideal Enigma</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway|Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="cube.css">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="container">
-      <div class="cube">
-        <div class="f1"></div>
-        <div class="f2"></div>
-        <div class="f3"></div>
-        <div class="f4"></div>
-        <div class="f5"></div>
-        <div class="f6"></div>
-      </div> 
-      <div class="cube hide">
-          <div class="f1"></div>
-          <div class="f3"></div>
-          <div class="f4"></div>
-      </div> 
+        <div class="cube">
+            <div class="f1"></div>
+            <div class="f2"></div>
+            <div class="f3"></div>
+            <div class="f4"></div>
+            <div class="f5"></div>
+            <div class="f6"></div>
+        </div>
+        <div class="cube hide">
+            <div class="f1"></div>
+            <div class="f3"></div>
+            <div class="f4"></div>
+        </div>
     </div>
     <header id="top" class="main-header">
-      <span class="main-title">TECHNOLOGY CONSULTANTS</span>
-      <h1 class="main-heading">Ideal Enigma</h1>
-      
-      
-      <a href = "#services">
-      <img class="arrow" src="images/arrow.svg" alt="Down arrow"></a>
+        <span class="main-title">TECH CONSULTANTS</span>
+        <h1 class="main-heading">Ideal Enigma</h1>
+
+
+        <a href="#services">
+            <img class="arrow" src="images/arrow.svg" alt="Down arrow"></a>
     </header>
 
-		<div class="primary-content" id = "services">
-			<!-- <p class="intro"></p> -->
-      <div>
-      <h2>Services</h2>
-      <p class = "services-tag"></p>
-        <div class = "item"> 
-          <a class = "item-link" href="#services">Custom web design</a>
+    <div class="primary-content" id="services">
+        <!-- <p class="intro"></p> -->
+        <div>
+            <h2>Services</h2>
+            <p class="services-tag"></p>
+            <div class="item">
+                <a class="item-link" href="#services">Custom web design</a>
+            </div>
+            <div class="item">
+                <a class="item-link" href="#services">Website Hosting and Maintenance</a>
+            </div>
+            <div class="item">
+                <a class="item-link" href="#services"> Mobile and Web App Development </a>
+            </div>
+            <div class="item">
+                <a class="link" href="#services">Consultation</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#services">Data automation and analysis</a>
+            </div>
         </div>
-        <div class = "item">
-          <a class = "item-link" href="#services">Website Hosting and Maintenance</a>
-        </div>
-        <div class = "item">
-          <a class = "item-link" href="#services"> Mobile and Web App Development </a>
-        </div>
-        <div class = "item">
-          <a class = "link" href="#services">Consultation</a>
-        </div>
-        <div class = "item">
-          <a class = "link" href="#services">Data automation and analysis</a>
-        </div>
-      </div>
-      </div>
+    </div>
 
-<!-- End .primary-content -->
+    <!-- End .primary-content -->
 
-		<div class="secondary-content" id = "secondary-content">
-      <div class = "contact">
-        <h1> Contact </h1>
-        <h3> <a href="mailto:admin@idealenigma.com">admin@idealenigma.com</a>
-      </div>
-		</div><!-- End .secondary-content -->
+    <div class="secondary-content" id="secondary-content">
+        <div class="contact">
+            <h1> Contact </h1>
+            <h3> <a href="mailto:admin@idealenigma.com">admin@idealenigma.com</a>
+        </div>
+    </div>
+    <!-- End .secondary-content -->
 
-		<footer class="main-footer">
-			<h2><a href=""> © Ideal Engima| 2017</a></h2>
-			<a href="#top" class = "backToTop">Back to top &raquo;</a>
-		</footer>
+    <footer class="main-footer">
+        <h2><a href=""> © Ideal Engima| 2017</a></h2>
+        <a href="#top" class="backToTop">Back to top &raquo;</a>
+    </footer>
 
     <script>
-    //   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    //   (function(){
-    //   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    //   s1.async=true;
-    //   s1.src='https://embed.tawk.to/5733d42fc6045a5c6e8da8b2/default';
-    //   s1.charset='UTF-8';
-    //   s1.setAttribute('crossorigin','*');
-    //   s0.parentNode.insertBefore(s1,s0);
-    // })();
+        //   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        //   (function(){
+        //   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        //   s1.async=true;
+        //   s1.src='https://embed.tawk.to/5733d42fc6045a5c6e8da8b2/default';
+        //   s1.charset='UTF-8';
+        //   s1.setAttribute('crossorigin','*');
+        //   s0.parentNode.insertBefore(s1,s0);
+        // })();
 
-    const pressed = [];
-    const secretCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b" , "a", "Enter"];
-    // const secretCode = 'cozy';
+        const pressed = [];
+        const secretCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"];
+        // const secretCode = 'cozy';
 
-    window.addEventListener('keyup', (e) => {
-      // console.log(e.key);
-      pressed.push(e.key);
-      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-      if(pressed.join('').includes(secretCode)) {
-        console.log("DING, DING!!");
-        cornify_add();
-      }
-      // console.log(pressed);
-    });
-  </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-   crossorigin="anonymous"></script>
-   <script type="text/javascript" src = "main.js"></script>
-  </body>
+        window.addEventListener('keyup', (e) => {
+            // console.log(e.key);
+            pressed.push(e.key);
+            pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+            if (pressed.join('').includes(secretCode)) {
+                console.log("DING, DING!!");
+                cornify_add();
+            }
+            // console.log(pressed);
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
